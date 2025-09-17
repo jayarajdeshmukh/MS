@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javscript Part2</title>
+    <script src="style.js"></script>
+   
+</head>
+<body>
+
+    <p id="demo">Javascript can change html content</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML='Hello World'">Click me!</button>
+<br><br>
+
+
+    <p id="demo1">First Text</p>
+    <button type="button" onclick="myfunction()">Click here to change old text</button>
+
+     <script>
+        function myfunction()
+        {
+            document.getElementById("demo1").innerHTML="Second text updated here";
+        }
+    </script>
+<br><br>
+
+
+    <p id="demo2">Old text</p>
+    <button type="button" onclick="myfunction1()">Old to new</button>
+
+    <script>
+        function myfunction1()
+        {
+            document.getElementById("demo2").innerHTML="new text";
+        }
+    </script>
+<br><br>
+
+
+   <h1 id="demo3">Old text</h1>
+   <button type="button" onclick="myfunction2()">Click here to change text</button>
+
+ 
+
+</body>
+</html>

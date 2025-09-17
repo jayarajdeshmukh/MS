@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("demo5").innerHTML="Second text updated here";
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">Click me to show Date & Time</button>
+    <h1 id="demo"></h1>
+    <br>
+    <button type="button" onclick="document.getElementById('demo1').style.fontSize='80px';">click me to change font size</button>
+    <h2 id="demo1">It can change font style</h2>
+    <br>
+    <h1 id="demo3">Hide text</h1>
+    <button type="button" onclick="document.getElementById('demo3').style.display='none'">Hide the text</button>
+    <br>
+    <hr>
+   <p id="demo4">javascript can change html content</p>
+   <button type="button" onclick="document.getElementById('demo4').innerHTML='Hello World'">Click me</button>
+    <br>
+    <p id="demo5">first text</p>
+    <button type="button" onclick="myFunction()">click here to change old text</button>
+     <br>
+     <p id="demo6">Old text</p>
+      <button type="button" onclick="myfunction1()">Old to new</button>
+    <script>
+        function myfunction1()
+        {
+            document.getElementById("demo6").innerHTML="new text";
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
