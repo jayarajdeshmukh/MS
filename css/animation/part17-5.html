@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Real-time Animation example</title>
+    <style>
+        body
+        {
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+        .box
+        {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 8px;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .pulse
+        {
+            animation: pulse 1s infinite; 
+        }
+        @keyframes pulse
+        {
+            0%,100% {transform: scale(1);}
+            50% {transform: scale(1.1);}
+        }
+
+        .bounce
+        {
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce 
+        {
+            0%,100% {transform: translateY(0);}
+            50% {transform: translateY(-20px);}
+        }
+
+        .fadeIn
+        {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn
+        {
+            to {opacity: 1;}
+        }
+
+        .rotate
+        {
+            animation: rotate 2s linear infinite;
+        }
+        @keyframes rotate 
+        {
+            to {transform: rotate(360deg);}
+        }
+
+        .slideRight
+        {
+            animation: slideRight 1s forwards;
+        }
+        @keyframes slideRight
+        { 
+            from {transform: translateX(-100%)}
+            to {transform: translateX(0) ;}
+        }
+    </style>
+</head>
+<body>
+    <h1>1. Pulse   <br>
+        2. Bounce <br>
+        3. Fade In  <br>
+        4. Rotate  <br>
+        5. Slide Right 
+    </h1>
+
+    <div class="box pulse">Pulse</div>    <br>
+    <div class="box bounce">Bounce</div>   <br>
+    <div class="box fadeIn">Fade In</div>   <br>
+    <div class="box rotate">Rotate</div>     <br>
+    <div class="box slideRight">Slide Right</div>
+</body>
+</html>

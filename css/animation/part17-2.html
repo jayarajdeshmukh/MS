@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Timing Function </title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            position: relative;
+            animation: demo 5s;
+            animation-fill-mode: forwards;
+            color: white;
+        }
+
+        #demo1{animation-timing-function: linear;}
+        #demo2{animation-timing-function: ease;}
+        #demo3{animation-timing-function: ease-in;}
+        #demo4{animation-timing-function: ease-out;}
+        #demo5{animation-timing-function: ease-in-out;}
+
+        @keyframes demo
+         {
+            from {left:0px;}
+            to {left: 300px;}
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Animation-timing-function <br>
+        1. linear (same speed from start to end) <br>
+        2. ease (slow start then fast then end slowly) <br>
+        3. ease-in (slow start) <br>
+        4. ease-out (slow start, slow end) <br>
+        5. ease-in-out (animation with slow start and end) <br>
+        6. cubic-bezier(n,n,n,n)
+    </h1>
+
+    <div id="demo1">  linear  </div>         <br>
+    <div id="demo2">  ease  </div>           <br>
+    <div id="demo3">  ease-in </div>         <br>
+    <div id="demo4">  ease-out </div>        <br>
+    <div id="demo5">  ease-in-out </div>     <br>
+
+
+</body>
+
+</html>

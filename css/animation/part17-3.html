@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animation-fill-mode</title>
+    <style>
+        div
+        {
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+            position: relative;
+            animation: demo;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            /* animation-fill-mode: backword; */
+        }
+
+        @keyframes demo
+        {
+           from {top: 0px;}
+           to {top: 200px; background-color: red;}
+        }
+    </style>
+</head>
+<body>
+    <h1>animation-fill-mode   <br>
+       none  <br>
+       forwards <br>
+       backwards <br>
+       both 
+    </h1>
+
+    <div>
+
+    </div>
+</body>
+</html>
